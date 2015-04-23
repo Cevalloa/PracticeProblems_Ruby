@@ -5,6 +5,17 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+	counter = 0
+
+	string.each_char do |character|
+		case character
+
+		when 'a' , 'e' , 'i' , 'o', 'u'
+			counter += 1
+		end
+	end
+
+	counter
 end
 
 # These are tests to check that your code is working. After writing
