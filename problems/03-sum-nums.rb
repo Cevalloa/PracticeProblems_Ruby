@@ -4,6 +4,9 @@
 # Difficulty: easy.
 
 def sum_nums(num)
+	return num if num == 0
+
+	sum_nums(num -1) + num
 end
 
 # These are tests to check that your code is working. After writing
