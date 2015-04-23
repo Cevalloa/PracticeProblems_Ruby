@@ -7,6 +7,9 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+
+	sentence.split.sort{|word, second_comparison| second_comparison.length <=> word.length}[0]
+
 end
 
 # These are tests to check that your code is working. After writing
