@@ -4,6 +4,11 @@
 # Difficulty: easy.
 
 def time_conversion(minutes)
+
+	#returns an array with the quotient in index 0, and modulus in index 1
+	array_hours_minutes = minutes.divmod(60)
+
+	"#{array_hours_minutes[0]}:#{'%02d' % array_hours_minutes[1]}"
 end
 
 # These are tests to check that your code is working. After writing
