@@ -6,6 +6,23 @@
 # Difficulty: easy.
 
 def reverse(string)
+
+	start_index = 0
+	last_index = string.length-1
+
+	while start_index < last_index
+
+		temp_variable = string[start_index]
+		string[start_index] = string[last_index]
+		string[last_index] = temp_variable
+
+		temp_variable = nil
+		start_index += 1
+		last_index -= 1
+	end
+
+	string
+
 end
 
 # These are tests to check that your code is working. After writing
