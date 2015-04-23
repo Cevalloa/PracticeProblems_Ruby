@@ -6,6 +6,9 @@
 # Difficulty: easy.
 
 def factorial(n)
+	return 1 if n == 0
+
+	factorial(n-1) * n
 end
 
 # These are tests to check that your code is working. After writing
