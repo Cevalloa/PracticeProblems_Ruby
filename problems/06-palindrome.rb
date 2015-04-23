@@ -6,6 +6,23 @@
 # Difficulty: easy.
 
 def palindrome?(string)
+
+	#easiest way is string == string.reverse
+
+	start_index = 0
+	final_index = string.length-1
+
+	while start_index < final_index
+
+		if string[start_index] != string[final_index]
+			return false
+		end
+
+		start_index += 1
+		final_index -= 1
+	end
+
+	true
 end
 
 # These are tests to check that your code is working. After writing
