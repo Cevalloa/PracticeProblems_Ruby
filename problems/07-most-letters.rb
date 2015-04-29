@@ -5,6 +5,43 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+
+	#Regular expression method (works)
+		# if string.scan(/a.{0,2}z/).nil?
+		# 	return false
+		# else
+		# 	return true
+		# end
+
+	#Check string until an a is found
+	#If an a is found, scan upto the next 3 letters
+	#Within the scan, if a z is found return true
+	#if loop completes without a match, return false
+
+	iterator = 0
+	while iterator < string.length-1 
+
+		#Check string until an a is found
+		if string[iterator] == 'a'
+
+			counter = 0
+			index = iterator + 1
+
+			while (counter < 3 && string[index] != nil)
+				if string[index] == 'z'
+					return true
+				end
+
+				counter += 1
+				index += 1
+			end
+
+		end
+
+		iterator += 1
+	end
+
+	return false
 end
 
 # These are tests to check that your code is working. After writing
