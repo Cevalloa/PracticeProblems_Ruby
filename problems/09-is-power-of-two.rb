@@ -8,6 +8,32 @@
 # Difficulty: medium.
 
 def is_power_of_two?(num)
+
+	#keep multiplying by 2
+	#if the product is over the parameter, return false
+	#if the product is the same as the parameter, return true
+
+	#keep dividing by two
+	#if the parameter is 0, return false
+	#if the return value is 1, return true (successfully gone down)
+	#if the remainder is not 0, return false
+
+
+	#going with the second one.. recursively
+		#keep dividing by two
+
+		#if the parameter is 0, return false
+		return false if num == 0
+
+		#if the return value is 1, return true (successfully gone down)
+		return true  if num == 1
+
+		#if the remainder is not 0, return false
+		return false if num % 2 != 0
+
+		is_power_of_two?(num/2)
+
+
 end
 
 # These are tests to check that your code is working. After writing
