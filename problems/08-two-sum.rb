@@ -5,6 +5,36 @@
 # Difficulty: medium.
 
 def two_sum(nums)
+
+	#option 1
+
+	#Every index, add with other number
+		#downfall -> n^2
+
+	#Check first to last, like a palindrome (this won't work)
+
+	#quick sort, add numbers up to 0
+
+	#Every Index, add with other number
+		#Iterate through array
+		nums.each_with_index do |number, index|
+		#iterate array with each individual number
+			nums.each_with_index do |second_number, second_index|
+				#skip if it is the same number
+				next if index == second_index
+
+				#if there is a match, return starting & current index
+				if (number + second_number == 0)
+					return [index, second_index]
+				end
+
+			end
+
+		end
+		#if there is no match, return nil (iterate through)
+
+		nil
+
 end
 
 # These are tests to check that your code is working. After writing
