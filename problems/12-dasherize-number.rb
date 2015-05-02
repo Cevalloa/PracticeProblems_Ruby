@@ -8,6 +8,46 @@
 # Difficulty: medium.
 
 def dasherize_number(num)
+
+	#Iterate each digit
+	#skip first index, and last index
+	#if the digit is odd, attach a dash before
+
+	#find length of num
+	#minus length by 1, multiply that by 1, and divide num by that number
+	#keep going until it is the  last digit
+
+	finalized_string = ""
+
+	num.to_s.split(//).each_with_index do |value, index|
+		puts num
+		puts "value : #{value} index: #{index}"
+
+		if (value.to_i.odd? && !(finalized_string[-1] == '-' && index == num.to_s.length-1))
+
+			if index == 0 || finalized_string[-1] == '-'
+
+				finalized_string += "#{value}-"
+
+			elsif index == num.to_s.length-1
+
+				finalized_string += "-#{value}"
+
+			else
+
+
+				finalized_string += "-#{value}-"
+
+			end
+		else
+
+
+			finalized_string += value
+		end
+		
+	end
+
+	 finalized_string
 end
 
 # These are tests to check that your code is working. After writing
