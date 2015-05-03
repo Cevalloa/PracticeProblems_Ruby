@@ -9,6 +9,13 @@
 # Difficulty: medium.
 
 def capitalize_words(string)
+
+	#Turn string into an array, with the seperator being the space
+	#iterate through the array, at each index capitalize the first letter
+
+	string.split(' ').map{|individual_word| individual_word.capitalize}.join(' ')
+
+
 end
 
 # These are tests to check that your code is working. After writing
