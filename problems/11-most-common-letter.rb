@@ -22,9 +22,10 @@ def most_common_letter(string)
 
 	end
 
-	hash_container.sort_by{|key, value| value[1]}.reverse[0][1]
+	#previous answer
+	#hash_container.sort_by{|key, value| value[1]}.reverse[0][1]
 
-	puts hash_container.sort{|a, b| b[1][1] <=> a[1][1]}[0][1].inspect
+	hash_container.sort{|a, b| b[1][1] <=> a[1][1]}[0][1]
 end
 
 # These are tests to check that your code is working. After writing
