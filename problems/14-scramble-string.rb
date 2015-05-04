@@ -5,6 +5,22 @@
 # Difficulty: medium.
 
 def scramble_string(string, positions)
+
+	#Option 1
+		#Incoming string will not be changed
+		#Iterate through positions array
+		#Extract positions value at each index from incoming string, place it an incoming string copy
+
+	#Option 2
+
+		string_final = string.dup
+		positions.each_with_index do |current_index, current_value|
+			
+			string_final[current_value] = string[current_index]
+
+		end
+
+		string_final
 end
 
 # These are tests to check that your code is working. After writing
