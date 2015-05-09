@@ -7,3 +7,5 @@ I also want to add that I am constantly adding more problems and then solving th
 
 Link to cracking the coding interview:
 https://github.com/Cevalloa/CrackingTheCodingInterviewAnswers_Ruby
+
+Feel free to email me for any questions
